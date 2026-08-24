@@ -82,24 +82,35 @@ no vio, con AUC de 0.938 y sin sobreajuste.
 
 ```
 .
+├── Proyecto_Primer_Corte_Heart_Disease.ipynb
+├── README.md
 ├── data/
 │   └── heart_cleveland.csv
-├── notebooks/
-│   └── Proyecto_Primer_Corte_Heart_Disease.ipynb
 ├── informe/
-│   └── Informe_Gerencial_Heart_Disease.pdf
-└── README.md
+│   └── Informe_Gerencial_Heart_Disease_Murillo.pdf
+└── video/
+    └── Video_Heart_disease.mp4
 ```
 
 ## Cómo reproducirlo
 
+Dependencias: pandas, numpy, scipy, scikit-learn, matplotlib y ucimlrepo.
+
+Con Anaconda solo falta la última:
+
 ```bash
-pip install numpy pandas scipy scikit-learn matplotlib jupyter ucimlrepo
-jupyter notebook notebooks/Proyecto_Primer_Corte_Heart_Disease.ipynb
+pip install ucimlrepo
 ```
 
-Ejecutar de principio a fin con Restart & Run All. La semilla está fija en 42, así que todas las
-cifras del informe se reproducen exactamente.
+Desde cero:
+
+```bash
+pip install pandas numpy scipy scikit-learn matplotlib jupyter ucimlrepo
+```
+
+Abrir `Proyecto_Primer_Corte_Heart_Disease.ipynb` en Jupyter y ejecutar de principio a fin
+con Restart & Run All. La semilla está fija en 42, así que todas las cifras del informe
+se reproducen exactamente.
 
 ## Limitaciones
 
